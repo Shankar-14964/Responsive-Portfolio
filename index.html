@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gupter:wght@400;500;700&family=Inter:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <h1 id="title">My Portfolio</h1>
+        <nav>
+            <div id="nav-toggle" class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="sidebar" class="sidebar">
+            <div id="close-sidebar" class="close-sidebar">
+                <i class="fas fa-times"></i>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="home" class="section home">
+        <div class="home_content">
+            <p id="my_name">Veera Gowri Shankar Karri</p>
+            <p id="desc">I'm a passionate developer with a focus on creating stunning and user-friendly web experiences. I specialize in building responsive and accessible web applications, leveraging modern technologies to bring ideas to life. With a strong foundation in both front-end and back-end development, I am committed to continuous learning and staying updated with the latest industry trends. Let's create something amazing together!</p>
+
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yourusername" target="_blank" class="social-link linkedin">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                
+                <a href="https://github.com/yourusername" target="_blank" class="social-link github">
+                    <i class="fab fa-github"></i>
+                </a>
+                
+                <a href="mailto:your.email@example.com" class="social-link email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                
+            </div>
+        </div>
+        <div class="image-container">
+            <img class="profile-image" src="Profile.jpeg" alt="Profile Image">
+        </div>
+    </section>
+
+    <section id="about" class="section about">
+        <div class="content">
+            <h2>About Me</h2>
+            <h3 class="education-title">Educational Details</h3>
+            
+            <div class="education-grid">
+                <div class="education-card">
+                    <img src="GVP.png" alt="Engineering Logo" class="education-logo">
+                    <div>
+                        <h3>Bachelor of Engineering</h3>
+                        <p>Specialization: Computer Science and Engineering</p>
+                        <p>Institution: GVPCE Autonomous</p>
+                        <p>Year: 2021 - 2025</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <img src="Tirumala.png" alt="Intermediate Logo" class="education-logo">
+                    <div>
+                        <h3>Intermediate (12th)</h3>
+                        <p>Major: Mathematics, Physics, Chemistry</p>
+                        <p>Institution: Tirumala Junior College</p>
+                        <p>Year: 2019 - 2021</p>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <img src="SCTS.png" alt="Tenth Logo" class="education-logo">
+                    <div>
+                        <h3>Secondary School (10th)</h3>
+                        <p>Institution: Sri Chaitanya E.M School</p>
+                        <p>Year: 2019</p>
+                    </div>
+                </div>
+            </div>
+            
+            <h3 class="skills-title">Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-item">C++</div>
+                <div class="skill-item">Machine Learning</div>
+                <div class="skill-item">Git & Github</div>
+                <div class="skill-item">HTML & CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">Python</div>
+            </div>
+            
+            <!-- Hobbies Section -->
+            <h3 class="hobbies-title">Hobbies</h3>
+            <div class="hobbies-grid">
+                <div class="hobby-item">Coding</div>
+                <div class="hobby-item">Reading</div>
+                <div class="hobby-item">Gaming</div>
+                <div class="hobby-item">Traveling</div>
+                <div class="hobby-item">Music</div>
+            </div>
+
+        </div>
+    </section>
+    
+    
+
+    <section id="projects" class="section projects">
+        <div class="content">
+            <h2 id="title-project">My Projects</h2>
+            <div class="grid-container">
+                <div class="project-card">
+                    <h3>Project 1: Personal Blog</h3>
+                    <p><strong>Tech Stack:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/yourusername/project1" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 2: Portfolio</h3>
+                    <p><strong>Tech Stack:</strong>HTML, CSS, JavaScrip</p>
+                    <a href="https://github.com/yourusername/project2" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 3: Task Manager App</h3>
+                    <p><strong>Tech Stack:</strong>JavaScript</p>
+                    <a href="https://github.com/yourusername/project3" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 4: Weather App</h3>
+                    <p><strong>Tech Stack:</strong>HTML,CSS,JavaScript</p>
+                    <a href="https://github.com/yourusername/project3" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 5: Weather App</h3>
+                    <p><strong>Tech Stack:</strong>HTML,CSS,JavaScript</p>
+                    <a href="https://github.com/yourusername/project3" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+                <div class="project-card">
+                    <h3>Project 6: Weather App</h3>
+                    <p><strong>Tech Stack:</strong>HTML,CSS,JavaScript</p>
+                    <a href="https://github.com/yourusername/project3" class="github-link" target="_blank">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="content">
+            <h2>Contact Me</h2>
+                    <form>
+                        <div class="form-container">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                            
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                            
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                            
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

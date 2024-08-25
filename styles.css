@@ -1,0 +1,477 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+#title{
+    padding-left: 6px;
+    transition: color 0.3s ease;
+    font-family: "Gupter", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.6rem;
+}
+
+#title:hover{
+    color: #f39c12;
+    
+}
+
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top:0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
+}
+
+#nav-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 800px) {
+    nav ul {
+        display: none;
+    }
+
+    #nav-toggle {
+        display: block;
+        padding:10px;
+    }
+}
+
+
+.section {
+    padding: 60px 20px;
+    min-height: 100vh;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: linear-gradient(to right, #2c3e50, #3498db);
+    color: white;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.home_content
+{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.profile-image
+{
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border: 5px solid #faca7dee;
+}
+
+#title-project
+{
+    font-family: 'Gupter', serif; 
+    color: #2c3e50;
+    font-size: 1.8rem; 
+}
+
+.about {
+    background-color: #ecf0f1;
+    text-align: center;
+    animation: slideInFromLeft 1s ease-in-out;
+}
+
+.projects {
+    background-color: #bdc3c7;
+    text-align: center;
+    min-height: 80vh;
+    animation: slideInFromRight 1s ease-in-out;
+}
+
+.grid-container {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,1fr);
+    gap: 20px;
+}
+
+@media screen and (min-width: 800px) {
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+}
+.project-card {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    background-color: #34495e;
+    color: white;
+    text-align: center;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+form{
+    margin-top: 20px;
+}
+.form-container {
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #343434;
+    border-radius: 10px;
+    margin: 0 auto; 
+    gap:10px;
+}
+
+form input, form textarea {
+    width: 100%;
+    max-width: 100%; 
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #c0392b;
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Animations  */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInFromLeft {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+
+@keyframes slideInFromRight {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0); }
+} 
+
+
+/* Style for the GitHub link */
+.github-link {
+    display: flex;
+    align-items: center;
+    gap:20px;
+    font-family: 'Roboto', sans-serif; /* Ensure consistent font */
+    color: #727272; /* Text color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Adjust font size */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.github-link:hover {
+    color: #333; /* Change text color on hover */
+}
+
+/* Style for the Font Awesome icon */
+.github-link i {
+    font-size: 1.5rem; /* Adjust icon size */
+    margin-right: 0.5rem; /* Space between icon and text */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+}
+
+.github-link:hover i {
+    transform: scale(1.1); /* Scale icon slightly on hover */
+}
+
+
+/* General style for all social links */
+.social-link {
+    display: inline-block;
+    margin: 0 10px;
+    color: #333; /* Default color */
+    font-size: 1.5rem; /* Icon size */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth color and scale transition */
+}
+
+.social-link:hover {
+    transform: scale(1.1); /* Scale up on hover */
+}
+
+/* Specific color for LinkedIn */
+.social-link.linkedin:hover {
+    color: #dcdcdc;
+}
+
+/* Specific color for GitHub */
+.social-link.github:hover {
+    color: #333;
+}
+
+/* Specific color for Email */
+.social-link.email:hover {
+    color: #aa5247; /* Google red for Gmail */
+}
+
+/* Optional: Customize size or additional spacing for icons */
+.social-link i {
+    vertical-align: middle;
+}
+
+
+#my_name {
+    font-family: 'Poppins', sans-serif; /* Choose a modern font */
+    font-size: 2rem; /* Adjust name size */
+    font-weight: 700; /* Bold weight */
+    color: #ffffffe4; /* Dark color */
+    margin-bottom: 10px;
+}
+
+#desc {
+    font-family: 'Roboto', sans-serif; /* Complementary font */
+    font-size: 1.1rem; /* Adjust size for readability */
+    font-weight: 400; /* Normal weight */
+    color: #b6b2b2ea; /* Softer color for contrast */
+    line-height: 1.6; /* Improved readability */
+    max-width: 800px; /* Limit width for better formatting */
+    margin-bottom: 20px;
+    transition: color 0.5s ease-in;
+}
+#desc:hover{
+    color:#babfc3;
+}
+
+
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.education-card {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: transform 0.3s ease;
+}
+
+.education-card:hover {
+    transform: scale(1.05);
+}
+
+.education-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.education-card h3 {
+    margin-bottom: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+.education-card p {
+    margin: 2px 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+.education-title {
+    margin-top: 40px; 
+    font-family: 'Gupter', serif; 
+    color: #2c3e50;
+    font-size: 1.8rem; 
+    text-align: center; 
+    animation: fadeInTitle 1s ease-in-out; 
+}
+
+@keyframes fadeInTitle {
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); /* Start slightly above */
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); /* End in the original position */
+    }
+}
+
+
+
+.skills-title, .hobbies-title {
+    margin-top: 40px; 
+    font-family: 'Gupter', serif; 
+    font-size: 1.8rem; 
+    color: #2c3e50; 
+    text-align: center; 
+    animation: fadeInTitle 1s ease-in-out; 
+}
+
+
+.skills-grid, .hobbies-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-item, .hobby-item {
+    background-color: #193654e0;
+    color: white; 
+    padding: 10px; 
+    border-radius: 8px; 
+    text-align: center; 
+    transition: transform 0.3s ease; 
+    animation: slideInFromBottom 1s ease-in-out; 
+}
+
+
+.skill-item:hover, .hobby-item:hover {
+    transform: scale(1.05); 
+}
+
+@media screen and (max-width: 800px) {
+    .skills-grid, .hobbies-grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+
+/* Sidebar styles */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 1000;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 15px;
+}
+
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar ul li a:hover {
+    color: #f39c12;
+}
+
+/* Close button inside the sidebar */
+.close-sidebar {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Show the sidebar */
+.sidebar-active {
+    width: 250px;
+}
+
+/* Media queries to hide sidebar on larger screens */
+@media screen and (min-width: 801px) {
+    #sidebar {
+        display: none;
+    }
+}
